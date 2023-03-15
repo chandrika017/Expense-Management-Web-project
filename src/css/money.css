@@ -1,0 +1,99 @@
+.imgMoney{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 29px;
+
+}
+.imgmine{
+    width:200px;
+    /* height:00px; */
+}
+
+@font-face {
+
+    src :url('./../fonts/new.ttf');
+    font-family: new;
+}
+
+.all{
+    font-family: new;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.E{
+    color: red;
+
+}
+
+.dateinfo {
+  
+    display: flex;
+    justify-content:space-evenly;
+    
+    margin-top: 20px;
+    width: 100%;
+    font-family:new;
+}
+
+.inputbox {
+    margin-top: 10px;
+}
+
+.input-group-text{
+    background-color: red;
+    color: black;
+cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 10px;
+    /* justify-content: space-evenly; */
+    margin-top: 10px;
+    
+    margin-top:15px;
+    margin-bottom: 15px;
+}
+button{
+    margin-left: 10px;
+}
+
+
+/* .makitsticky{
+    margin-bottom: 15px;
+    margin-top:15px;
+    position: sticky;
+    z-index: 99;
+    bottom: 15px;
+} */
+
+/* .dateinfo {
+    position: sticky;
+    top: 60px;
+    z-index: 999;
+} */
+
+.allboxes {
+    height: 300px;
+    overflow-y: auto;
+}
+
+.tableData{
+    margin-top:20px;
+    margin-bottom:15px;
+    overflow-x: auto;
+}
+
+
+.saveDBS{
+    
+   
+    justify-content:center;
+    align-items:center;
+    display:none;
+}
+

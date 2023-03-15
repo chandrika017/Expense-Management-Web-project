@@ -1,0 +1,108 @@
+.dark{
+    background : black;   
+    color: #fff;
+}
+@font-face {
+
+    src :url('/../fonts/new.ttf');
+    font-family: new;
+}
+
+.c {
+    color: red;
+    font-family: new;
+}
+
+
+.tables{
+    overflow-x: auto;
+}
+
+table{
+    overflow-x: auto;
+}
+
+.heading{
+
+    margin-top:10px;
+    margin-bottom:10px;
+    text-align:center;
+    letter-spacing:3px;
+    text-transform: capitalize;
+    
+}
+
+.show_hide{
+
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:20px
+
+}
+
+.gaouges{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:row;
+    overflow-x: auto;
+    height:350px;
+ 
+}
+
+.gouge{
+    height:350px;
+    overflow-x:auto;
+    margin-top:15px;
+
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:row;
+
+}
+
+.errorin{
+    text-align: center;
+    margin-top:15px;
+}
+
+.summary{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    /* background-image: linear-gradient(to right,#000,#999); */
+}
+
+.allbootom{
+
+    position: sticky;
+    bottom: 5px;
+    
+}
+
+.filter{
+    position: sticky;
+    bottom:10px;
+    margin-top:10px;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+}
+
+select{
+    margin: 5px;
+}
+
+input[type="date"]
+{
+    margin : 5px;
+}
+
+.nf{
+    text-align:center;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-top: 10px;
+}

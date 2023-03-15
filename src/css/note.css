@@ -1,0 +1,51 @@
+.imgopt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.box {
+    
+    margin-top: 20px;
+}
+
+textarea{
+    width: 100%;
+}
+form{
+    margin-top: 10px;
+
+}
+.note{
+    margin-top: 15px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    display: grid;
+    /* flex-direction: row; */
+   grid : 200px / auto auto auto ;
+   /* box-shadow: 0 0 5px , 0 0 10px; */
+
+}
+@media (max-width : 400px)
+{
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+.card{
+
+    box-shadow: 0 1px 5px, 0 1px 10px;
+}

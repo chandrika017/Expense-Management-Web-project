@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hishab_Kitab_Notes</title>
+    <link rel="shortcut icon" href="/../images/icon.ico" type="image/x-icon">
+  
+    <script  defer src="http://localhost:80/socket.io/socket.io.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <link rel="stylesheet" href="/../css/index.css">
+    <link rel="stylesheet" href="./../css/allRgds.css">
+    
+
+
+</head>
+
+<body>
+
+
+  <!-- nav bar  -->
+    <div class="mainheadin container">
+        <h1 class="headings"> <span class="n">N</span>otes
+        </h1>
+    </div>
+
+    <div class="navigation container">
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark "> 
+            <div class="container-fluid">
+              <a class="navbar-brand headings" href="/"><span class="n">N</span>otes</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/myexpanses"> <i class="fas fa-inr"></i> My Expenses</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/mynotes"> <i class="fas fa-sticky-note"></i>  My Note</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/about"><i class="fas fa-info-circle"></i> About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle username " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fas fa-user-circle"></i> User
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item darks"><i class="fas fa-moon"></i> Dark Mode</a></li>
+                      <li><a class="dropdown-item darks" href="/delete/allrecords"><i class="fas fa-cog"></i> Delete All Records</a></li>
+                      <li><a class="dropdown-item" href="/logout"><i class="fas fa-user"></i> sign out</a></li>
+                      <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+
+   <!-- alerterror  -->
+   <div class="alert alert-danger container" role="alert" style="margin-top:10px; display:none">
+
+  </div>
+
+  <!-- //images for not found data -->
+  <div class="container show_hide">
+    <img src="./../images/sad.svg" alt="" class="img-fluid" width="152px" height="150px">
+    <div class="norecords">
+      <h3>
+      <span class="c">S</span>orry <span class="c">N</span>o <span class="c">R</span>ecords  <span class="c">F</span>ound <span class="c">Y</span>et</h3>
+    </div>
+  </div>
+
+
+ <!-- for the filter button and options  -->
+
+
+
+
+
+
+
+
+
+  <!-- for the graph and table  -->
+
+
+
+<!-- graph -->
+
+
+
+
+<!-- //main graph -->
+
+
+<div class="coonetionError" style="display: none;"></div>
+<div class="continer gouge">
+ 
+  <div id="chart_div" style="width: 400px; height: 250px;" class="container gaouges"></div>
+  <div id="chart_div_WW" style="width: 400px; height: 250px;" class="container gaouges"></div>
+  <div id="chart_div_MM" style="width: 400px; height: 250px;" class="container gaouges"></div>
+  <div id="chart_div_YY" style="width: 400px; height: 250px;" class="container gaouges"></div>
+
+</div>
+
+
+
+
+
+
+
+  <!-- table  -->
+
+
+
+
+
+
+
+<!-- heading forn the data  -->
+<div class="container norcd" style="display:none;">
+
+ 
+
+</div>
+
+<div class="show">
+
+<div class="container heading"> <span class="c">L</span>ast <span class="c">O</span>ne <span class="c">W</span>eek  </div>
+
+  <div class="tables container"></div>
+
+  <table class="table container" id="mainTable">
+    <thead class="first_T_HEAD">
+      <!-- <tr>
+
+        <th scope="col"><span class="c">D</span>ate</th>
+        <th scope="col"><span class="c">T</span>otal <span class="c">E</span>xpanses</th>
+        <th scope="col"><span class="c">O</span>ption</th>
+      </tr> -->
+    </thead>
+    <tbody class="first_T_Body">
+      <!-- <tr>
+ 
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr> -->
+     
+    </tbody>
+  </table>
+
+
+
+
+
+
+
+
+  
+</div>
+
+<!-- //summary options -->
+<div class="allbootom">
+  <div class="summary container"></div>
+  <div class="container filter">
+
+   <input type="date" class="form-control datewise" placeholder="yyyy-mm-dd">
+
+   <select name="month" id="months" class="form-control lastSelect">
+    <option value="7" default selected>Last One Week</option>
+    <option value="14">Last Two Weeks</option>
+    <option value="31">Last One Month</option>
+    <option value="153">Last Five Months</option>
+    <option value="365">Last One Year</option>
+    <option value="1828">Last Five Years</option>
+  
+    <option value="3000">All</option>
+
+   </select>
+
+
+   
+   <!-- <select name="year" id="years" class="form-control">
+   
+    <option value="1">hello</option>
+    <option value="1">hello</option>
+    <option value="1">hello</option>
+    <option value="1">hello</option>
+    <option value="1">hello</option>
+    <option value="1">hello</option>
+
+   </select> -->
+  </div>
+</div>
+
+
+</body>
+<script src="./../javascript/allRcds.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+
+
+</html>
+
+
